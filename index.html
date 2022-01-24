@@ -1,0 +1,13 @@
+<h1>Light Control</h1> 
+
+<button onclick="toggle_light()">Toggle Light 1</button>
+
+<script>
+function toggle_light()
+{
+	let request = new XMLHttpRequest();
+  request.open("GET", "https://webhooks.eu.workato.com/webhooks/rest/4c572375-211c-40ae-aadb-6fa43e099cf2/button-click");
+  request.send();
+  console.log("toggle event sent")
+}
+</script>
